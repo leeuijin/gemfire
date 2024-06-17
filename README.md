@@ -1,3 +1,4 @@
+# Test Files
 1. GemFireHello.java : simle test : Data insert(put) & one by one select(get)
 2. HelloMap.java : Using HashMap select(get) data   
 3. GemFireTest.java : Compare select (get) Performance Test with one by one fetch & HashMap fetch
@@ -10,10 +11,20 @@ Test Env (VM)
 * JDK version : Java version: 11.0.23
 * Maven version : Apache Maven 3.9.7 
 
-Test Result
+# Compare select (get) Performance Test Result 
+
+## (keys : 10,000)
 
 Data insertion time: 248 ms
 
 HashMap Data select query time: 17 ms
 
 One by one fetch Data select query time: 46 ms
+
+## (keys : 10,000,000)
+
+Data insertion time: 21130 ms
+
+HashMap Data select query time: 6872 ms
+
+One by one fetch Data select query time: 9180 ms
