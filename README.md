@@ -2,12 +2,12 @@
 2. HelloMap.java : Using HashMap select(get) data   
 3. GemFireTest.java : Compare select (get) Performance Test with one by one fetch & HashMap fetch
     
-Local Env (VM)
+Test Env (VM)
 
-  1. OS: Rocky Linux release 8.10 (Green Obsidian)
-  2. CPU : 2 Core , Memory 8192MB
-  3. GemFire version : 10.1.1
-  4. Maven version : Apache Maven 3.9.7 
+* OS: Rocky Linux release 8.10 (Green Obsidian)
+* CPU : 2 Core , Memory 8192MB
+* GemFire version : 10.1.1 (vmware-gemfire-10.1.1.tgz)
+* Maven version : Apache Maven 3.9.7 
 
 Test Result
 
