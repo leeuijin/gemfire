@@ -7,7 +7,7 @@ Test Env (VM)
 * OS: Rocky Linux release 8.10 (Green Obsidian)
 * CPU : 2 Core , Memory 8192MB
 * GemFire version : 10.1.1 (vmware-gemfire-10.1.1.tgz)
-* java version : Java version: 11.0.23
+* JDK version : Java version: 11.0.23
 * Maven version : Apache Maven 3.9.7 
 
 Test Result
