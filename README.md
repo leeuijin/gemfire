@@ -28,3 +28,11 @@ Data insertion time: 21130 ms
 HashMap Data select query time: 6872 ms
 
 One by one fetch Data select query time: 9180 ms
+
+## Atlassian link (Korean) : 
+
+Gemfire Installation (VM) : https://geartec82.atlassian.net/wiki/external/ZDc5NGVjM2M1YzQ5NGY1ZWE3ZmZlYzhkYmNiYTU5Yzc
+
+Gemfire Management Console Installation (VM) : https://geartec82.atlassian.net/wiki/external/ZWM3NmIxYTU0M2QzNGMyMTlhOTY5ODFjYjhhNzBkZmE
+
+
