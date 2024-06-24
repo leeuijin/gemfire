@@ -15,11 +15,13 @@ Test Env (VM)
 
 ## (keys : 10,000)
 
-Data insertion time: 248 ms
+Data insertion time: 230 ms
 
-HashMap Data select query time: 17 ms
+HashMap Data select query time: 18 ms
 
-One by one fetch Data select query time: 46 ms
+One by one fetch Data select query time: 42 ms
+
+ConcurrentHashMap fetch Data select query time: 10 ms
 
 ## (keys : 10,000,000)
 
