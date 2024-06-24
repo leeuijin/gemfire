@@ -39,6 +39,7 @@ public class GemFireTest {
         // 데이터 조회 시작 시간 기록
         long startQueryTime = System.currentTimeMillis();
 
+        // case1. HashMap
         // 10,000건의 데이터 조회
         Map<String, String> results = new HashMap<>();
         for (int i = 1; i <= 10000000; i++) {
@@ -57,6 +58,8 @@ public class GemFireTest {
         //    System.out.println(entry.getKey() + ": " + entry.getValue());
         //}
         String p_value;
+
+        // case2. one by one fetch
         long startQueryTime2 = System.currentTimeMillis();
         for (int i = 1; i <= 10000000; i++) {
 
@@ -67,7 +70,8 @@ public class GemFireTest {
         }
         long endQueryTime2 = System.currentTimeMillis();
         System.out.println("One by one fetch Data select query time: " + (endQueryTime2 - startQueryTime2) + " ms");
-
+        
+        // case3. ConcurrentHashMap
         long startQueryTime3 = System.currentTimeMillis();
 
         // 10,000건의 데이터 조회
@@ -77,8 +81,10 @@ public class GemFireTest {
             String value = region.get(key);
             results.put(key, value);
         }
-        // 10,000건의 데이터 조회
+        // 데이터 조회 종료 시간 기록
         long endQueryTime3 = System.currentTimeMillis();
+
+        // 종료시간 - 시작시간
         System.out.println("ConcurrentHashMap fetch Data select query time: " + (endQueryTime3 - startQueryTime3) + " ms");
 
         // Cache 종료
