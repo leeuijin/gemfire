@@ -1,8 +1,10 @@
+
 import org.apache.geode.cache.Cache;
 import org.apache.geode.cache.CacheFactory;
 import org.apache.geode.cache.Region;
 import org.apache.geode.cache.RegionShortcut;
 
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -23,9 +25,9 @@ public class GemFireTest {
 
         // 10,000건의 임의 데이터 생성 및 삽입
         Random random = new Random();
-        for (int i = 1; i <= 10000; i++) {
+        for (int i = 1; i <= 10000000; i++) {
             String key = "key" + i;
-            String value = "value" + random.nextInt(10000);
+            String value = "value" + random.nextInt(10000000);
             region.put(key, value);
         }
 
@@ -39,7 +41,7 @@ public class GemFireTest {
 
         // 10,000건의 데이터 조회
         Map<String, String> results = new HashMap<>();
-        for (int i = 1; i <= 10000; i++) {
+        for (int i = 1; i <= 10000000; i++) {
             String key = "key" + i;
             String value = region.get(key);
             results.put(key, value);
@@ -56,7 +58,7 @@ public class GemFireTest {
         //}
         String p_value;
         long startQueryTime2 = System.currentTimeMillis();
-        for (int i = 1; i <= 10000; i++) {
+        for (int i = 1; i <= 10000000; i++) {
 
             p_value = region.get(i);
             // 결과 출력 (생략 가능,one by one fetch)
@@ -65,6 +67,19 @@ public class GemFireTest {
         }
         long endQueryTime2 = System.currentTimeMillis();
         System.out.println("One by one fetch Data select query time: " + (endQueryTime2 - startQueryTime2) + " ms");
+
+        long startQueryTime3 = System.currentTimeMillis();
+
+        // 10,000건의 데이터 조회
+        Map<Integer, String> results2 = new ConcurrentHashMap<>();
+        for (int i = 1; i <= 10000000; i++) {
+            String key = "key" + i;
+            String value = region.get(key);
+            results.put(key, value);
+        }
+        // 10,000건의 데이터 조회
+        long endQueryTime3 = System.currentTimeMillis();
+        System.out.println("ConcurrentHashMap fetch Data select query time: " + (endQueryTime3 - startQueryTime3) + " ms");
 
         // Cache 종료
         cache.close();
