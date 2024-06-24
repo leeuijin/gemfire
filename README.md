@@ -23,11 +23,13 @@ One by one fetch Data select query time: 46 ms
 
 ## (keys : 10,000,000)
 
-Data insertion time: 21130 ms
+Data insertion time: 18489 ms
 
-HashMap Data select query time: 6872 ms
+HashMap Data select query time: 6482 ms
 
-One by one fetch Data select query time: 9180 ms
+One by one fetch Data select query time: 8119 ms
+
+ConcurrentHashMap fetch Data select query time: 6203 ms
 
 ## Atlassian link (Korean) : 
 
