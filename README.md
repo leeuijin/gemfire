@@ -34,9 +34,8 @@ One by one fetch Data select query time: 8119 ms
 ConcurrentHashMap fetch Data select query time: 6203 ms
 
 # Data Serializastion Insert Test (lab3)
-
-Gemfire_lab3.java  :  Excution main file ( connection & region create & Serialization data insert & print )
-President.java     :  Serialization data structures file (name,birth_location,birthday)
+1. Gemfire_lab3.java  :  Excution main file ( connection & region create & Serialization data insert & print )
+2. President.java     :  Serialization data structures file (name,birth_location,birthday)
 
 **Gemfire_lab3 Results:**
 
