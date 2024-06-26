@@ -1,9 +1,9 @@
 # Test Files
-1. GemFireHello.java     : **[Lab1]**simle test : Data insert(put) & one by one select(get)
-2. HelloMap.java         : [Lab2]Using HashMap select(get) data   
-3. GemFireTest.java     : [Lab2]Compare select (get) Performance Test (One by one fetch & HashMap & ConcurrentHashMap )
-4. Gemfire_lab3.java  :  Serialization data insert & print 
-5. President.java     :  Serialization data structures class file (name,birth_location,birthday)
+1. GemFireHello.java     : Simle test : Data insert(put) & one by one select(get)    --[Lab1]
+2. HelloMap.java         : Using HashMap select(get) data   --[Lab2]
+3. GemFireTest.java     : Compare select (get) Performance Test (One by one fetch & HashMap & ConcurrentHashMap ) --[Lab2]
+4. Gemfire_lab3.java  :  Serialization data insert & print --[Lab3]
+5. President.java     :  Serialization data structures class file (name,birth_location,birthday) --[Lab3]
     
 Test Env (VM)
 
