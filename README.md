@@ -2,6 +2,8 @@
 1. GemFireHello.java : simle test : Data insert(put) & one by one select(get)
 2. HelloMap.java : Using HashMap select(get) data   
 3. GemFireTest.java : Compare select (get) Performance Test with one by one fetch & HashMap fetch
+4. Gemfire_lab3.java  :  Serialization data insert & print 
+5. President.java     :  Serialization data structures class file (name,birth_location,birthday)
     
 Test Env (VM)
 
