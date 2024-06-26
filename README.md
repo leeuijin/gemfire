@@ -13,7 +13,7 @@ Test Env (VM)
 * JDK version : Java version: 11.0.23
 * Maven version : Apache Maven 3.9.7 
 
-# Compare select (get) Performance Test Result (lab2)
+# Compare select (get) Performance Test Result (Lab2)
 
 ## (keys : 10,000)
 
@@ -35,7 +35,7 @@ One by one fetch Data select query time: 8119 ms
 
 ConcurrentHashMap fetch Data select query time: 6203 ms
 
-# Data Serializastion Insert Test (lab3)
+# Data Serializastion Insert Test (Lab3)
 1. Gemfire_lab3.java  :  Excution main file ( connection & region create & Serialization data insert & print )
 2. President.java     :  Serialization data structures file (name,birth_location,birthday)
 
