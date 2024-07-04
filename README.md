@@ -58,5 +58,7 @@ Gemfire Installation (VM) : https://geartec82.atlassian.net/wiki/external/ZDc5NG
 
 Gemfire Management Console Installation (VM) : https://geartec82.atlassian.net/wiki/external/ZWM3NmIxYTU0M2QzNGMyMTlhOTY5ODFjYjhhNzBkZmE
 
+Gemfire Development Environment Construction (IntelliJ) : https://geartec82.atlassian.net/wiki/external/YWUyZTdhNGFiZmE2NDE3ODk0Nzc1ZGY0ODViNjU3ZDY
+
 
 
